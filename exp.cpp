@@ -31,14 +31,11 @@ int main() {
         }
     }
 
-
     // Print the matrix
     cout << "Random 20x20 matrix:\n";
     cout << A << endl;
 
     auto start = high_resolution_clock::now();
-
-
     for (r1 = 0; r1 < n; ++r1) {
         for (r2 = r1 + 1; r2 < n; ++r2) {
             for (c1 = 0; c1 < n; ++c1) {
@@ -57,8 +54,5 @@ int main() {
             }
         }
     }
-    auto end = high_resolution_clock::now();
-    auto duration = duration_cast<milliseconds>(end - start);
-
     return 0;
 }
